@@ -1,0 +1,405 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<usages xmlns="http://xmlns.oracle.com/jdeveloper/110000//usages-tracking-data">
+   <hash n="system-info">
+      <value n="build-label" v="MAIN-21.21"/>
+      <value n="dev-build" v="false"/>
+      <value n="guid" v="02ad4607-015f-1000-8001-c0a80073c88b"/>
+      <value n="jdk-version" v="1.8.0_91"/>
+      <value n="operating-system" v="Windows 10"/>
+      <value n="product-edition"/>
+      <value n="product-name" v="Oracle SQL Developer"/>
+      <value n="product-version" v="4.1.4.21.21"/>
+      <value n="session-end-time" v="1515150594262"/>
+      <value n="session-id" v="1515142831002"/>
+      <value n="session-start-time" v="1515142831002"/>
+      <value n="user-role"/>
+   </hash>
+   <hash n="usage-data">
+      <list n="activities">
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.dbtools.raptor.oviewer.base.ViewerNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.raptor.oviewer.table.GridDataEditor"/>
+            <value n="time-stamp" v="1515147150382"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515147410164"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515147417241"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515147419853"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.dbtools.raptor.oviewer.base.ViewerNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.raptor.oviewer.table.GridDataEditor"/>
+            <value n="time-stamp" v="1515147975790"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515148019993"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.dbtools.raptor.oviewer.base.ViewerNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.raptor.oviewer.table.GridDataEditor"/>
+            <value n="time-stamp" v="1515148724732"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515148772938"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.dbtools.raptor.oviewer.base.ViewerNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.raptor.oviewer.table.GridDataEditor"/>
+            <value n="time-stamp" v="1515148774993"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515148776538"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515148780242"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515148785951"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.dbtools.raptor.oviewer.base.ViewerNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.raptor.oviewer.table.GridDataEditor"/>
+            <value n="time-stamp" v="1515148793586"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515148831476"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515148836492"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.dbtools.raptor.oviewer.base.ViewerNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.raptor.oviewer.table.GridDataEditor"/>
+            <value n="time-stamp" v="1515149008570"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149019648"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149020884"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149495392"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149498916"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149514504"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.dbtools.raptor.oviewer.base.ViewerNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.raptor.oviewer.xmleditor.holders.XMLBasedEditor0"/>
+            <value n="time-stamp" v="1515149541112"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.dbtools.raptor.oviewer.base.ViewerNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.raptor.oviewer.table.GridDataEditor"/>
+            <value n="time-stamp" v="1515149543174"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149557532"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149620982"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149622245"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149623358"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149633502"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149645064"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149932445"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149938681"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149946869"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515149949462"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150115696"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150422227"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150423195"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150425808"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150431464"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150440886"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150444040"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150470777"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150512887"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150519792"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150524955"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150535242"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150554025"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150572727"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.ide.db.model.SqlNode"/>
+            </hash>
+            <value n="event-source" v="oracle.dbtools.worksheet.editor.Worksheet"/>
+            <value n="time-stamp" v="1515150591185"/>
+         </hash>
+      </list>
+   </hash>
+</usages>

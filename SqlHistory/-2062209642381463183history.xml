@@ -1,0 +1,11 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[INSERT INTO Reservation (FlightID, PassengerID, PaymentID, SeatNo) values (1, 1, 1, 1);]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1513613838884]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[3]]></executed>
+		<execTime><![CDATA[0.5]]></execTime>
+	</historyItem>
+</history>

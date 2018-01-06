@@ -1,0 +1,18 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT XMLQUERY('for $i in /payments/payment
+                for $j in /reservations/reservation
+                  where $i/ISCARDPAYMENT = 1
+                  and $i/AMOUNTPAID > 6000
+                  and $i/ID eq $j/PAYMENTID
+              return $j'
+              PASSING XML_RESERVATION.XML_DATA RETURNING CONTENT) 
+            FROM  XML_RESERVATION;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1515079447443]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.247]]></execTime>
+	</historyItem>
+</history>

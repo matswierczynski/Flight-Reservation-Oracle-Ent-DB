@@ -1,0 +1,15 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[CREATE OR REPLACE TRIGGER on_reservation_insert_insert_passenger
+AFTER INSERT ON Reservation
+BEGIN
+INSERT INTO Passenger (ClientID, FavCarrierID, LoyaltyPoints, FlightsNo) values (1, 1, 1, 1);
+END;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1513005660181]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.034]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,68 @@
+set serveroutput on
+
+declare
+xmlDoc                xmldom.DOMDocument; 
+xmlElem               xmldom.DOMElement; 
+vxml                  XMLTYPE;
+nodeList              xmldom.DOMNode;
+
+FlightElement         xmldom.DOMElement;
+IDElement             xmldom.DOMElement;
+CarrierIDElement      xmldom.DOMElement;
+AirplaneIDElement     xmldom.DOMElement;
+DepAirportIDElement   xmldom.DOMElement;
+DestAirportIDElement  xmldom.DOMElement;
+DepDateElement        xmldom.DOMElement;
+ArrDateElement        xmldom.DOMElement;
+
+IDText                xmldom.DOMText;
+CarrierIDText         xmldom.DOMText;
+AirplaneIDText        xmldom.DOMText;
+DepAirportIDText      xmldom.DOMText;
+DestAirportIDText     xmldom.DOMText;
+DepDateText           xmldom.DOMText;
+ArrDateText           xmldom.DOMText;
+
+FlightsNode           xmldom.DOMNode;
+FlightNode            xmldom.DOMNode;
+IDNode                xmldom.DOMNode;
+CarrierIDNode         xmldom.DOMNode;
+AirplaneIDNode        xmldom.DOMNode;
+DepAirportIDNode      xmldom.DOMNode;
+DestAirportIDNode     xmldom.DOMNode;
+DepDateNode           xmldom.DOMNode;
+ArrDateNode           xmldom.DOMNode;
+
+begin
+SELECT XML_DATA 
+  INTO vxml
+  FROM XML_FLIGHT
+  WHERE ID=1;
+xmlDoc:= dbms_xmldom.newDOMDocument(vxml);
+xmlElem := xmldom.getDocumentElement(xmlDoc);
+FlightsNode :=xmldom.makeNode(xmlElem);
+
+FlightElement         	:= xmldom.createElement(xmlDoc,'flight');
+FlightNode              :=xmldom.makeNode(FlightElement);
+
+IDElement  				    := xmldom.createElement(xmlDoc,'ID' );
+IDNode                :=xmldom.makeNode(IDElement);
+CarrierIDElement  		:= xmldom.createElement(xmlDoc,'CARRIERID' );
+CarrierIDNode				  :=xmldom.makeNode(CarrierIDElement);
+AirplaneIDElement 		:= xmldom.createElement(xmlDoc, 'AIRPLANEID');
+AirplaneIDNode			  :=xmldom.makeNode(AirplaneIDElement);
+DepAirportIDElement  	:= xmldom.createElement(xmlDoc, 'DEPAIRPORTID' );
+DepAirportIDNode 		  :=xmldom.makeNode(DepAirportIDElement);
+DestAirportIDElement  := xmldom.createElement(xmlDoc,'DESTAIRPORTID' );
+DestAirportIDNode		  :=xmldom.makeNode(DestAirportIDElement);
+DepDateElement       	:= xmldom.createElement(xmlDoc, 'DEPDATE');
+DepDateNode				    :=xmldom.makeNode(DepDateElement);
+ArrDateElement        := xmldom.createElement(xmlDoc, 'ARRDATE' );
+ArrDateNode				    :=xmldom.makeNode(ArrDateElement);
+
+
+FlightsNode   :=xmldom.appendChild(FlightsNode, xmldom.makeNode(FlightElement));
+xmldom.freeDocument(xmlDoc);
+
+
+end;

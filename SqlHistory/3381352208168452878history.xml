@@ -1,0 +1,13 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SET LONG 100000;
+SELECT BRAND FROM XML_AIRPLANE
+WHERE XMLEXISTS('/airplanes/airplane/BRAND = "Fiat"' PASSING XML_DATA);]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1515155788753]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.062]]></execTime>
+	</historyItem>
+</history>

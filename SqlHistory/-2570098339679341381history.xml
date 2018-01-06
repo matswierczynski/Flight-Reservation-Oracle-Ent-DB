@@ -1,0 +1,11 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[DROP TABLE matthew.airplane CASCADE CONSTRAINTS;]]></sql>
+		<connection><![CDATA[Flight Reservation]]></connection>
+		<timestamp><![CDATA[1508672332174]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.287]]></execTime>
+	</historyItem>
+</history>

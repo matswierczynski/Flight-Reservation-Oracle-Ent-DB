@@ -1,0 +1,17 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SET LONG 100000;
+UPDATE XML_AIRPLANE
+SET XML_DATA=UPDATEXML(XML_DATA, 
+                                'airplanes/airplane/BRAND/text()','Mercedes',
+                                'airplanes/airplane/MODEL/text()','CLS',
+                                'airplanes/airplane/SEATSNO/text()',200)
+WHERE EXISTSNODE(XML_DATA, '/airplanes/airplane/BRAND ="Fiat"') = 1;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1515155034337]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[3]]></executed>
+		<execTime><![CDATA[1.484]]></execTime>
+	</historyItem>
+</history>

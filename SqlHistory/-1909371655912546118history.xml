@@ -1,0 +1,28 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[DROP trigger on_reservation;
+CREATE OR REPLACE TRIGGER on_reservation
+  BEFORE INSERT ON reservation
+  FOR EACH ROW
+DECLARE
+PASSENGER_ID NUMBER;
+BEGIN
+  SELECT Passenger.ID
+    INTO Passenger_ID
+    FROM Passenger
+   WHERE Passenger.ID = :NEW.PassengerID;
+   exception
+  when NO_DATA_FOUND then
+   NULL; -- or do something else you choose
+  --IF :NEW.ReservationID <= 40 THEN
+  --  RAISE_APPLICATION_ERROR(-20000, 'Participant too young!');
+  --END IF;
+  end;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1512063131103]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.05]]></execTime>
+	</historyItem>
+</history>

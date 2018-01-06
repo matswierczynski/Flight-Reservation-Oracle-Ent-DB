@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSettings class="oracle.dbtools.raptor.controls.grid.RaptorGridPersistedSettings" xmlns="http://xmlns.oracle.com/jdeveloper/110000/Table-attributes">
+   <columnPositions class="java.util.ArrayList">
+      <Item class="java.lang.String">ID</Item>
+      <Item class="java.lang.String">FLIGHTID</Item>
+      <Item class="java.lang.String">PASSENGERID</Item>
+      <Item class="java.lang.String">PAYMENTID</Item>
+      <Item class="java.lang.String">SEATNO</Item>
+   </columnPositions>
+   <columnWidths>
+      <Item>0</Item>
+      <Item>0</Item>
+      <Item>62</Item>
+      <Item>65</Item>
+      <Item>88</Item>
+      <Item>76</Item>
+      <Item>59</Item>
+   </columnWidths>
+   <searchParams class="java.util.ArrayList"/>
+   <sortClauses>
+      <Item class="java.lang.String">3 desc</Item>
+      <Item/>
+   </sortClauses>
+   <uniqueName>IdeConnections%23Flight+ReservationSELECT * FROM "MATTHEW"."RESERVATION"</uniqueName>
+</TableSettings>

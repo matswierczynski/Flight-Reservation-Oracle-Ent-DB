@@ -1,0 +1,7 @@
+SET LONG 10000000;
+SELECT XMLQUERY('for $i in /base/payments/payment
+                  for $j in /base/reservations/reservation
+                  where $i/ID = $j/PAYMENTID
+                    return $i/ID'
+                    PASSING XML_DATA RETURNING CONTENT) 
+                    FROM XML_DATABASE;

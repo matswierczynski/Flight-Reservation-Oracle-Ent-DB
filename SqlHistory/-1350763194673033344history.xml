@@ -1,0 +1,29 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[CREATE TABLE FLIGHT(
+    ID NUMBER(10),
+    CarrierID NUMBER(10) CONSTRAINT CarrierIDReqFl NOT NULL,
+    AirplaneID NUMBER(10) CONSTRAINT AirplaneIDREqFl NOT NULL,
+    DepAirportID NUMBER(10) CONSTRAINT DepAirportIDReqFl NOT NULL,
+    DestAirportID NUMBER(10) CONSTRAINT DestAirportIDFl NOT NULL,
+    DepDate DATE CONSTRAINT DepDateReqFl NOT NULL,
+    ArrDate DATE CONSTRAINT ArrDateReqFl NOT NULL,
+    
+    CONSTRAINT PKIDFl PRIMARY KEY (ID),
+    CONSTRAINT FKCarrierIDFl FOREIGN KEY (CarrierID)
+      REFERENCES Carrier,
+    CONSTRAINT FKAirplaneIDFl FOREIGN KEY (AirplaneID)
+      REFERENCES Airplane,
+    CONSTRAINT FKDepAirportIDFl FOREIGN KEY (DepAirportID)
+      REFERENCES Airport,
+    CONSTRAINT FKDestAirportIDFl FOREIGN KEY (DestAirportID)
+      REFERENCES Airport
+);]]></sql>
+		<connection><![CDATA[Flight Reservation]]></connection>
+		<timestamp><![CDATA[1508669392058]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.038]]></execTime>
+	</historyItem>
+</history>

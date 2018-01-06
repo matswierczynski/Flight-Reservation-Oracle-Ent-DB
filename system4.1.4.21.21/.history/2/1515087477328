@@ -1,0 +1,83 @@
+DROP TABLE xml_airplane;
+DROP TABLE xml_airport;
+DROP TABLE xml_carrier;
+DROP TABLE xml_client;
+DROP TABLE xml_country;
+DROP TABLE xml_flight;
+DROP TABLE xml_passenger;
+DROP TABLE clob_payment;
+DROP TABLE char_payment;
+DROP TABLE xml_payment;
+DROP TABLE xml_reservation;
+
+CREATE TABLE xml_airplane(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_airport(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_carrier(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_client(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_country(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_flight(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+                       
+CREATE TABLE xml_passenger(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_payment(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE clob_payment(
+  id        NUMBER,
+  xml_data  CLOB
+);
+
+CREATE TABLE char_payment(
+  id        NUMBER,
+  xml_data  VARCHAR2
+);
+
+CREATE TABLE xml_reservation(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+@@generate_xml_1
+@@generate_xml_2
+@@generate_xml_3
+@@generate_xml_4
+@@generate_xml_5
+@@generate_xml_6
+@@generate_xml_7
+@@generate_xml_8
+@@generate_xml_9
+
+
+
+--set long 1000000;
+--SELECT x.XML_DATA.getClobVal()
+--FROM XML_AIRPLANE x;
+  

@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<usages xmlns="http://xmlns.oracle.com/jdeveloper/110000//usages-tracking-data">
+   <hash n="system-info">
+      <value n="build-label" v="MAIN-21.21"/>
+      <value n="dev-build" v="false"/>
+      <value n="guid" v="02ad4607-015f-1000-8001-c0a80073c88b"/>
+      <value n="jdk-version" v="1.8.0_91"/>
+      <value n="operating-system" v="Windows 10"/>
+      <value n="product-edition"/>
+      <value n="product-name" v="Oracle SQL Developer"/>
+      <value n="product-version" v="4.1.4.21.21"/>
+      <value n="session-end-time" v="1507579430227"/>
+      <value n="session-id" v="1507578432758"/>
+      <value n="session-start-time" v="1507578432758"/>
+      <value n="user-role"/>
+   </hash>
+   <hash n="usage-data">
+      <list n="activities">
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.jdevimpl.help.StartPageNode"/>
+            </hash>
+            <value n="event-source" v="oracle.jdevimpl.help.StartPageEditor"/>
+            <value n="time-stamp" v="1507578433215"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="CREATE_CONNECTION"/>
+            <hash n="event-properties">
+               <value n="db-type" v="oraJDBC"/>
+            </hash>
+            <value n="event-source" v="DB"/>
+            <value n="time-stamp" v="1507578624942"/>
+         </hash>
+         <hash>
+            <value n="event-id" v="ACTIVATE_EDITOR"/>
+            <hash n="event-properties">
+               <value n="node-class" v="oracle.jdevimpl.help.StartPageNode"/>
+            </hash>
+            <value n="event-source" v="oracle.jdevimpl.help.StartPageEditor"/>
+            <value n="time-stamp" v="1507578673323"/>
+         </hash>
+      </list>
+   </hash>
+</usages>

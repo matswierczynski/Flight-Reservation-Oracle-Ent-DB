@@ -1,0 +1,16 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[INSERT INTO Reservation (FlightID, PassengerID, PaymentID, SeatNo) values (1, 1, 1, 1);
+SELECT * FROM Reservation
+WHERE FlightID = 1
+AND PassengerID = 1
+AND PaymentID = 1
+AND SeatNo = 1;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1513613959147]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[3]]></executed>
+		<execTime><![CDATA[1.891]]></execTime>
+	</historyItem>
+</history>

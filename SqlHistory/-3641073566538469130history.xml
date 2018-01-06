@@ -1,0 +1,59 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[DROP TABLE address;
+DROP TABLE subject;
+DROP TABLE professor;
+DROP TABLE classes;
+DROP TABLE student;
+CREATE TABLE student(
+s_id NUMBER,
+s_name VARCHAR2(50 CHAR),
+s_last_name VARCHAR2(50 CHAR),
+s_pesel NUMBER,
+s_telephone NUMBER,
+s_mail VARCHAR2(50 CHAR),
+s_address_id NUMBER,
+CONSTRAINT student_pk PRIMARY KEY(s_id)
+);
+
+CREATE TABLE address(
+ad_id NUMBER,
+ad_province VARCHAR2(30 CHAR),
+ad_city VARCHAR2(30 CHAR),
+ad_street VARCHAR2(30 CHAR),
+ad_house_no NUMBER,
+CONSTRAINT address_pk PRIMARY KEY (ad_id),
+CONSTRAINT address_student_fk FOREIGN KEY (ad_id) REFERENCES student(s_id)
+);
+
+CREATE TABLE subject(
+sub_id NUMBER,
+sub_name VARCHAR2(50 char),
+CONSTRAINT sub_id_pk PRIMARY KEY (sub_id)
+);
+
+CREATE TABLE professor(
+prof_id NUMBER,
+prof_name VARCHAR2(50 CHAR),
+prof_last_name VARCHAR2(50 CHAR),
+CONSTRAINT professor_id_pk PRIMARY KEY (prof_id)
+);
+
+CREATE TABLE classes(
+cl_id NUMBER,
+CONSTRAINT classes_id_pk PRIMARY KEY (cl_id),
+CONSTRAINT classes_subject_fk FOREIGN KEY (cl_id) REFERENCES subject(sub_id),
+--CONSTRAINT classes_professor_fk FOREIGN KEY (cl_id) REFERENCES professsor(prof_id)
+);
+
+
+INSERT INTO student
+VALUES (1,'Mark','Twain',94112204191,123456789,'m@gmail.com',12);]]></sql>
+		<connection><![CDATA[connection]]></connection>
+		<timestamp><![CDATA[1507378035799]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.269]]></execTime>
+	</historyItem>
+</history>

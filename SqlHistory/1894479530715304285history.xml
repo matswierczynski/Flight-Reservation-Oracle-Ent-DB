@@ -1,0 +1,18 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SET LONG 100000;
+SELECT XMLQUERY('for $i in /base/flights/flight
+                  where $i/ARRDATE > xs:date("2015-01-01")
+              
+                  
+                    return $i/ARRDATE'
+                    PASSING XML_DATA RETURNING CONTENT) 
+                    FROM XML_DATABASE;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1515152639374]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[1.189]]></execTime>
+	</historyItem>
+</history>

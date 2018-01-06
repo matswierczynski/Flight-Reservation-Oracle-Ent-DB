@@ -1,0 +1,22 @@
+DECLARE
+  l_xmltype XMLTYPE;
+  
+BEGIN
+  SELECT XMLELEMENT("payments",
+          XMLAGG(
+            XMLELEMENT("payment",
+              XMLFOREST(
+              p.ID AS "ID",
+              p.AMOUNTPAID AS "AMOUNTPAID",
+              p.PAYMENTDATE AS "PAYMENTDATE",
+              p.ISCARDPAYMENT AS "ISCARDPAYMENT"
+              )
+            )
+          )
+        )
+  INTO l_xmltype8
+  FROM payment p;
+  
+  INSERT INTO xml_payment VALUES (1,l_xmltype8);
+END;
+/

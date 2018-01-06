@@ -1,0 +1,17 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[create or replace TRIGGER on_reservation_2
+AFTER INSERT OR UPDATE ON Reservation
+FOR EACH ROW
+FOLLOWS on_reservation_1
+BEGIN
+INSERT INTO Log (TriggerOnReservation) VALUES ('on_reservation_2');
+END;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1513013735394]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.063]]></execTime>
+	</historyItem>
+</history>

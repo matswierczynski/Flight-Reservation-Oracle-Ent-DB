@@ -1,0 +1,16 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT XMLQUERY('for $id in /payments/payment
+              where $id/ISCARDPAYMENT = 1
+              and $id/AMOUNTPAID > 6000
+              return $id/ID'
+              PASSING XML_DATA RETURNING CONTENT) 
+            FROM XML_PAYMENT;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1515077046130]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[7.343]]></execTime>
+	</historyItem>
+</history>

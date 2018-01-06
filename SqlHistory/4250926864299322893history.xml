@@ -1,0 +1,14 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select 
+  updatexml(XML_DATA, '/airplanes/airplane/BRAND="Pontiac"','TEST')
+  FROM XML_AIRPLANE 
+  WHERE ID=1;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1515158226747]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.076]]></execTime>
+	</historyItem>
+</history>

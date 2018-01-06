@@ -1,0 +1,26 @@
+DECLARE
+  l_xmltype XMLTYPE;
+  l_clob CLOB;
+  l_char VARCHAR2;
+  
+BEGIN
+  SELECT XMLELEMENT("payments",
+          XMLAGG(
+            XMLELEMENT("payment",
+              XMLFOREST(
+              p.ID AS "ID",
+              p.AMOUNTPAID AS "AMOUNTPAID",
+              p.PAYMENTDATE AS "PAYMENTDATE",
+              p.ISCARDPAYMENT AS "ISCARDPAYMENT"
+              )
+            )
+          )
+        )
+  INTO l_xmltype, l_clob, l_char
+  FROM payment p;
+  
+  INSERT INTO xml_payment VALUES (1,l_xmltype);
+  INSERT INTO clob_payment VALUES (1,l_clob);
+  INSERT INTO char_payment VALUES (1,l_char);
+END;
+/

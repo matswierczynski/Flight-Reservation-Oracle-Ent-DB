@@ -1,0 +1,20 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[CREATE OR REPLACE TRIGGER on_reservation_insert_insert_passenger
+AFTER INSERT ON Reservation
+BEGIN
+my_public_package.my_var := my_public_package.my_var+1;
+IF my_public_package.my_var > 5 THEN
+DBMS_OUTPUT.PUT_LINE('test');
+ELSE
+INSERT INTO Passenger (ClientID, FavCarrierID, LoyaltyPoints, FlightsNo) values (1, 1, 1, 1);
+END IF;
+END;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1513007583996]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.043]]></execTime>
+	</historyItem>
+</history>

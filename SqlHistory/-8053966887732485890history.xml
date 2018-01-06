@@ -1,0 +1,25 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SET LONG 10000000;
+SELECT XMLQUERY('for $i in /base/payments/payment
+                  where $i/AMOUNTPAID > 6000
+                  and $i/ISCARDPAYMENT = 1
+                    return $i/ID'
+                    PASSING XML_DATA RETURNING CONTENT) 
+                    FROM XML_DATABASE;
+                    
+                    
+SELECT XMLQUERY('for $i in /base/flights/flight
+                  where $i/ARRADATE > 01-01-2015
+                  
+                    return $i/ID'
+                    PASSING XML_DATA RETURNING CONTENT) 
+                    FROM XML_DATABASE;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1515152294656]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[8.203]]></execTime>
+	</historyItem>
+</history>

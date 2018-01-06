@@ -1,0 +1,6 @@
+SELECT XMLQUERY('for $i in /payments/payment
+                 for $j in /reservations/reservation
+                  
+              return $j'
+              PASSING XML_RESERVATION.XML_DATA RETURNING CONTENT) 
+            FROM  XML_RESERVATION;

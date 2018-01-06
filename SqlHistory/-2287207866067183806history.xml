@@ -1,0 +1,36 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[declare
+  vDOM      dbms_xmldom.DOMDocument;
+  vNodes    dbms_xmldom.DOMNodeList;
+  vxml      XMLTYPE;
+
+begin
+  SELECT XML_DATA 
+  INTO vxml
+  FROM XML_AIRPLANE 
+  WHERE ID=1;
+  -- create the dom document from our example xmltype
+  vDOM := dbms_xmldom.newDOMDocument(vxml);
+  -- find all text nodes in the dom document and return them into a node list
+  vNodes := dbms_xslprocessor.selectNodes
+              (n         => dbms_xmldom.makeNode(dbms_xmldom.getDocumentElement(vDOM))
+              ,pattern   => '//text()'
+              ,namespace => null
+              );
+  -- iterate through the node list
+  for i in 0 .. dbms_xmldom.getlength(vNodes) - 1 loop
+    -- output the text value of each text node in the list
+    dbms_output.put_line(dbms_xmldom.getNodeValue(dbms_xmldom.item(vNodes,i)));
+  end loop;
+  -- free up document resources
+  dbms_xmldom.freeDocument(vDOM);       
+end;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1515161987211]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.125]]></execTime>
+	</historyItem>
+</history>

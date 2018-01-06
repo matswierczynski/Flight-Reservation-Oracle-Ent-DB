@@ -1,0 +1,18 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[CREATE OR REPLACE TRIGGER on_reservation_insert_insert_passenger
+AFTER INSERT ON Reservation
+BEGIN
+IF TRIGGER_NESTLEVEL() > 5 THEN
+     DBMS_OUTPUT.PUT_LINE('TEST');
+    END IF;
+INSERT INTO Passenger (ClientID, FavCarrierID, LoyaltyPoints, FlightsNo) values (1, 1, 1, 1);
+END;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1513006277905]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[2]]></executed>
+		<execTime><![CDATA[0.02]]></execTime>
+	</historyItem>
+</history>

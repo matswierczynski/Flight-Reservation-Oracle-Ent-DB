@@ -1,0 +1,145 @@
+DROP TABLE xml_airplane;
+DROP TABLE xml_airport;
+DROP TABLE xml_carrier;
+DROP TABLE xml_client;
+DROP TABLE xml_country;
+DROP TABLE xml_flight;
+DROP TABLE xml_passenger;
+DROP TABLE xml_payment;
+DROP TABLE xml_reservation;
+
+CREATE TABLE xml_airplane(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_airport(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_carrier(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_client(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_country(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_flight(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+                       
+CREATE TABLE xml_passenger(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_payment(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+CREATE TABLE xml_reservation(
+  id        NUMBER,
+  xml_data  XMLTYPE
+);
+
+
+DECLARE
+  l_xmltype XMLTYPE;
+  
+
+BEGIN
+  SELECT XMLELEMENT("airplanes",
+          XMLAGG(
+            XMLELEMENT("airplane",
+              XMLFOREST(
+              a.ID AS "ID",
+              a.BRAND AS "BRAND",
+              a.MODEL AS "MODEL",
+              a.SEATSNO AS "SEATSNO"
+              )
+            )
+          )
+        )
+  INTO l_xmltype
+  FROM airplane a;
+  
+  INSERT INTO xml_airplane VALUES (1,l_xmltype);
+END;
+
+l_xmltype:=NULL;
+  
+BEGIN
+  SELECT XMLELEMENT("airports",
+          XMLAGG(
+            XMLELEMENT("airport",
+              XMLFOREST(
+              a.ID AS "ID",
+              a.COUNTRYID AS "COUNTRYID",
+              a.NAME AS "NAME",
+              a.CITY AS "CITY"
+              )
+            )
+          )
+        )
+  INTO l_xmltype
+  FROM airport a;
+  
+  INSERT INTO xml_airport VALUES (1,l_xmltype);
+END;
+
+l_xmltype:=NULL;
+  
+BEGIN
+  SELECT XMLELEMENT("carriers",
+          XMLAGG(
+            XMLELEMENT("carrier",
+              XMLFOREST(
+              a.ID AS "ID",
+              a.NAME AS "NAME",
+              a.RATING AS "RATING"
+              )
+            )
+          )
+        )
+  INTO l_xmltype
+  FROM carrier a;
+  
+  INSERT INTO xml_carrier VALUES (1,l_xmltype);
+END;
+
+l_xmltype:=NULL;
+  
+BEGIN
+  SELECT XMLELEMENT("airports",
+          XMLAGG(
+            XMLELEMENT("airport",
+              XMLFOREST(
+              a.ID AS "ID",
+              a.COUNTRYID AS "COUNTRYID",
+              a.NAME AS "NAME",
+              a.CITY AS "CITY"
+              )
+            )
+          )
+        )
+  INTO l_xmltype
+  FROM airport a;
+  
+  INSERT INTO xml_airport VALUES (1,l_xmltype);
+END;
+
+set long 1000000;
+SELECT x.XML_DATA.getClobVal()
+FROM XML_AIRPLANE x;
+  

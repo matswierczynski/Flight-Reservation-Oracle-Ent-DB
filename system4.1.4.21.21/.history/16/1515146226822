@@ -1,0 +1,9 @@
+SELECT
+XMLCAST(XMLQUERY('for $id in /payments/payment
+                                    where $id/ISCARDPAYMENT = 1
+                                      and $id/AMOUNTPAID > 6000
+                                      return $id/ID'
+                                      PASSING XML_DATA RETURNING CONTENT)
+                                       AS VARCHAR2(4000 BYTE)
+                                  )
+                                 FROM XML_PAYMENT;

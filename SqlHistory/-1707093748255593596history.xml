@@ -1,0 +1,11 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[alter session set nls_date_format = 'YYYY-MON-DD HH24:MI:SS';]]></sql>
+		<connection><![CDATA[Flight Reservation]]></connection>
+		<timestamp><![CDATA[1508685372001]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.031]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSettings class="oracle.dbtools.raptor.controls.grid.RaptorGridPersistedSettings" xmlns="http://xmlns.oracle.com/jdeveloper/110000/Table-attributes">
+   <columnPositions class="java.util.ArrayList">
+      <Item class="java.lang.String">ID</Item>
+      <Item class="java.lang.String">COUNTRYID</Item>
+      <Item class="java.lang.String">FIRSTNAME</Item>
+      <Item class="java.lang.String">LASTNAME</Item>
+      <Item class="java.lang.String">CITY</Item>
+      <Item class="java.lang.String">STREET</Item>
+      <Item class="java.lang.String">HOUSENO</Item>
+      <Item class="java.lang.String">FLATNO</Item>
+      <Item class="java.lang.String">TELNUMBER</Item>
+      <Item class="java.lang.String">EMAIL</Item>
+   </columnPositions>
+   <columnWidths>
+      <Item>0</Item>
+      <Item>0</Item>
+      <Item>67</Item>
+      <Item>78</Item>
+      <Item>82</Item>
+      <Item>110</Item>
+      <Item>173</Item>
+      <Item>89</Item>
+      <Item>68</Item>
+      <Item>58</Item>
+      <Item>77</Item>
+      <Item>222</Item>
+   </columnWidths>
+   <searchParams class="java.util.ArrayList"/>
+   <sortClauses>
+      <Item/>
+   </sortClauses>
+   <uniqueName>IdeConnections%23matt_orclSELECT * FROM "C##MATT"."CLIENT"</uniqueName>
+</TableSettings>

@@ -1,0 +1,15 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT ID,Firstname,Lastname
+FROM CLIENT WHERE
+Client.ID IN (SELECT ClientID 
+              FROM Passenger
+              WHERE Passenger.LoyaltyPoints BETWEEN 100 AND 105);]]></sql>
+		<connection><![CDATA[matt_airport]]></connection>
+		<timestamp><![CDATA[1509706902141]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.063]]></execTime>
+	</historyItem>
+</history>

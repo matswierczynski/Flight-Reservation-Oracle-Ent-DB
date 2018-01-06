@@ -1,0 +1,17 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SET LONG 10000000;
+SELECT XMLQUERY('for $i in /base/countries/country
+                  for $j in /base/airports/airport
+                  where $i/ID = $j/COUNTRYID
+                    return $i/ID'
+                    PASSING XML_DATA RETURNING CONTENT) 
+                    FROM XML_DATABASE;]]></sql>
+		<connection><![CDATA[matt_orcl]]></connection>
+		<timestamp><![CDATA[1515150754226]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[81.734]]></execTime>
+	</historyItem>
+</history>

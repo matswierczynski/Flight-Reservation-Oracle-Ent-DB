@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<usages xmlns="http://xmlns.oracle.com/sqldeveloper/400//usages-tracking-data"><property name='uid' value='02ad4607-015f-1000-8001-c0a80073c88b'/>
+<property name='sessionid' value='1515085723937'/>
+<property name='build' value='MAIN-21.21'/>
+<property name='devbuild' value='false'/>
+<property name='java-version' value='1.8.0_91'/>
+<property name='os-name' value='Windows 10'/>
+<property name='edition' value='null'/>
+<property name='product-name' value='Oracle SQL Developer'/>
+<property name='product-version' value='4.1.4.21.21'/>
+<property name='start-time' value='1515085558470'/>
+<event id='editor-open' source='oracle.jdevimpl.help.StartPageEditor' time='1515085558474'><value  node-class='oracle.jdevimpl.help.StartPageNode'  /></event><event id='editor-open' source='oracle.dbtools.worksheet.editor.Worksheet' time='1515085561297'><value  node-class='oracle.ide.db.model.SqlNode'  /></event></usages>

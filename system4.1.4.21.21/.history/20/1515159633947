@@ -1,0 +1,2 @@
+ UPDATE XML_AIRPLANE 
+ SET XML_DATA = updateXML(XML_DATA,'//airplanes/airplane[BRAND="Pontiac"]/BRAND/text()', 'TEST');
